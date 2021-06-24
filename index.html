@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--CREATE A HEADER TITLE-->
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h1>Portfolio Filter</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filter-buttons">
+                    <ul id="filter-btns">
+                        <li class="active" data-target="all">ALL</li>
+                        <li data-target="Html_css">HTML/CSS</li>
+                        <li data-target="Javascript">JAVASCRIPT</li>
+                        <li data-target="Python">PYTHON</li>
+                        <li data-target="Certs">CERTIFICATIONS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style = "height: 75vh;overflow-x: auto;margin: 0 auto;">
+                <div class="portfolio-gallery" style="background-color: #9e9e9ec7;border-radius: 10px;padding: 20px;">
+                    
+                    <div class="item" style="margin: 0 auto;" data-id="Html_css">
+                        <div class="inner">
+                            <img src="./project_images/Parallax.png" alt="Parallax">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-id="Html_css"style="margin: 0 auto;">
+                        <div class="inner">
+                            <img src="./project_images/WeatherApp.png" alt="WeatherApp">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-id="Python" style="margin: 0 auto;">
+                        <div class="inner">
+                            <img src="./project_images/Final Output.png" alt="Python Space Ship Game">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-id="Javascript" style="margin: 0 auto;">
+                        <div class="inner">
+                            <img src="./project_images/Store_Locator.png" alt="Store Lookup">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-id="Javascript" style="margin: 0 auto;">
+                        <div class="inner">
+                            <img src="./project_images/MovieLocator.png" alt="Movie Lookup">
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="Certs" style="margin: 0 auto;">
+                        <div class="inner">
+                            <img src="./project_images/Certificate1.png" alt="Certificate1">
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="Certs" style="margin: 0 auto;">
+                        <div class="inner">
+                            <img src="./project_images/Certificate2.png" alt="Certificate2">
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="Certs" style="margin: 0 auto;">
+                        <div class="inner">
+                            <img src="./project_images/Certificate3.png" alt="Certificate3">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CREATE AROUND 7-8 buttons-->
+    <!--ADD IMAGES LOAD ALL THRU JAVASCRIPT-->
+</body>
+<script src="script.js"></script>
+</html>
