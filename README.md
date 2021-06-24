@@ -1,7 +1,7 @@
 # Portfolio-Filter
 
-##Creator: Nirmith Victor D'Almeida
-### Responsive assitance credit : Coding with Nick
+## Creator: Nirmith Victor D'Almeida
+## Responsive assitance credit : Coding with Nick
 
 #### Why did you create this Nirmith???
 - Because I wanted to update my personal website but I wanted to create a tester for it so yes.
@@ -16,3 +16,4 @@
 - I learnt and advanced my knowledge in DOM Manipulation
 
 What it looks like:
+![final look](https://github.com/NirmithVictor/Portfolio-Filter/blob/main/project_images/finalLook.png)
