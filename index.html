@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--CREATE A HEADER TITLE-->
@@ -14,6 +15,7 @@
             <div class="row">
                 <div class="section-title text-center">
                     <h1>Portfolio Filter</h1>
+                    <p style="padding: 5px;">(Please click on each image to take you to the linked items)</p>
                 </div>
             </div>
             <div class="row">
@@ -24,6 +26,7 @@
                         <li data-target="Javascript">JAVASCRIPT</li>
                         <li data-target="Python">PYTHON</li>
                         <li data-target="Certs">CERTIFICATIONS</li>
+                        <li data-target="">C++ / JAVA</li>
                     </ul>
                 </div>
             </div>
@@ -32,19 +35,19 @@
                     
                     <div class="item" style="margin: 0 auto;" data-id="Html_css">
                         <div class="inner">
-                            <img src="./project_images/Parallax.png" alt="Parallax">
+                            <a target="_blank"href="https://heuristic-darwin-f9e201.netlify.app/"><img src="./project_images/Parallax.png" alt="Parallax"></a>
                         </div>
                     </div>
                     
                     <div class="item" data-id="Html_css"style="margin: 0 auto;">
                         <div class="inner">
-                            <img src="./project_images/WeatherApp.png" alt="WeatherApp">
+                            <a target="_blank" href="https://festive-dijkstra-33ccd1.netlify.app/"><img src="./project_images/WeatherApp.png" alt="WeatherApp"></a>
                         </div>
                     </div>
                     
                     <div class="item" data-id="Python" style="margin: 0 auto;">
                         <div class="inner">
-                            <img src="./project_images/Final Output.png" alt="Python Space Ship Game">
+                            <a target="_blank" href="https://github.com/NirmithVictor/Python-space-invader-game"><img src="./project_images/Final Output.png" alt="Python Space Ship Game"></a>
                         </div>
                     </div>
                     
@@ -82,8 +85,70 @@
             </div>
         </div>
     </section>
-    <!--CREATE AROUND 7-8 buttons-->
-    <!--ADD IMAGES LOAD ALL THRU JAVASCRIPT-->
+    <!--Testimonials-->
+    <section class="Testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h1>Testimonials</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filter-buttons">
+                    <ul id="filter-btnss">
+                        <li class="active" data-target="1">1</li>
+                        <li data-target="2">2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style = "height: 45vh;overflow-x: auto;margin: 0 auto;">
+                <div class="portfolio-gallery1" style="background-color: #9e9e9e81;border-radius: 10px 0 10px 0;;padding: 20px;">
+                    <div class="project-card1" data-id="1">           
+                        <br>
+                        <p class="texts"><i>"Nirmith is the team leader type of person, he's always coming up with several ideas when it comes to tackling problems, maybe one too many ideas haha, he is always up to thinking outside the box that sometimes he may not see the answer right infront of him, but that's okay! This is a clear sign of a man who's passionate about what he does, a man who is curious about anything and everything, a man who doesn't quit until he succeeds. A hardworker by the definition, Nirmith is a joy to work with, sometimes he might need someone to step on the brakes, but most people need someone to step on the gas, and I'd say having too much speed in your field has very little cons and way too many pros."</i></p>
+                        <br>
+                        <hr/>
+                        <br>
+                        <p style="display: flex;justify-content: space-between;"> 
+                          <div style="display: flex;justify-content: flex-end;padding: 0 21px 21px 21px;">
+                              <div  style="font-family:'Trebuchet MS', sans-serif;"><p style="font-size: xx-large;">Ali Sharif</p>
+                                  <div>
+                                      <div style="display: flex;font-size: 40px; justify-content: flex-end;padding: 10px;">
+                                          <div style="padding-right: 20px;"><a href="https://www.linkedin.com/in/ali-sharif-2a835716b/" target="_blank" class="social1">
+                                            <i class="fab fa-linkedin" style="color: white;"></i>
+                                          </a></div>
+                                          <div><a href="https://www.instagram.com/alisharif9967" target="_blank" class="social1">
+                                            <i class="fab fa-instagram-square" style="color: white;"></i>                                    </a></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> 
+                        </p> 
+                    </div>
+                    <div class="project-card1" data-id="2" style="display: none;">           
+                        <br>
+                        <p class="texts"><i>"Nirmith is really good at coding. He is one of the best at applying his knowledge to solve problems and always comes up with a good solution. He is really confident and passionate about what he does, which is seen through his work. With his never give up attitude, he always gets things done. Nirmith is also someone who takes charge of things and is willing to be the one to lead the group. It was really fun working with him and the work always goes smoothly when he’s on the team."</i></p>
+                        <br>
+                        <hr/>
+                        <br>
+                        <p style="display: flex;justify-content: space-between;"> 
+                          <div style="display: flex;justify-content: flex-end;padding: 0 21px 21px 21px;">
+                              <div  style="font-family:'Trebuchet MS', sans-serif;"><p style="font-size: xx-large;">Soorya Balaji</p>
+                                  <div>
+                                      <div style="display: flex;font-size: 40px;justify-content: flex-end;padding: 10px;">
+                                          <div><a href="https://www.instagram.com/_celestial_03" target="_blank" class="social1">
+                                            <i class="fab fa-instagram-square" style="color: white;"></i>                                    
+                                        </a></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> 
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="script.js"></script>
 </html>

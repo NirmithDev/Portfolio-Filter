@@ -1,6 +1,8 @@
 const filterButtons = document.querySelector("#filter-btns").children;
+const filterButtonsTest = document.querySelector("#filter-btnss").children;
 const items = document.querySelector(".portfolio-gallery").children;
-   
+const itemsTest = document.querySelector(".portfolio-gallery1").children;
+
 for (let i = 0; i < filterButtons.length; i++) {
     filterButtons[i].addEventListener("click", function () {
         for (let j = 0; j < filterButtons.length; j++) {
@@ -22,5 +24,24 @@ for (let i = 0; i < filterButtons.length; i++) {
             }
         }
    
+    })
+}
+
+// for loops
+for(let i=0;i<filterButtonsTest.length;i++){
+    filterButtonsTest[i].addEventListener("click",function(){
+        for (let j = 0; j < filterButtonsTest.length; j++) {
+            filterButtonsTest[j].classList.remove("active")
+        }
+        this.classList.add("active");
+        const target = this.getAttribute("data-target")
+        for(let k=0;k<itemsTest.length;k++){
+            itemsTest[k].style.display = "none";
+            if (target == itemsTest[k].getAttribute("data-id")) {
+                itemsTest[k].style.display = "block";
+                itemsTest[k].style.margin= "0 auto";
+                
+            }
+        }
     })
 }

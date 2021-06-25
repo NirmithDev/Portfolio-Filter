@@ -47,23 +47,23 @@ body{
 .text-right{
     text-align: right!important;
 }
-.portfolio{
+.portfolio, .Testimonials{
     padding: 30px 7px;
 }
-.portfolio .section-title h1:before{
+.portfolio .section-title h1:before,.Testimonials .section-title h1:before{
     left: 30%;
 }
-.portfolio .filter-buttons{
+.portfolio .filter-buttons, .Testimonials .filter-buttons{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 20px;
 }
-.portfolio .filter-buttons ul{
+.portfolio .filter-buttons ul, .Testimonials .filter-buttons ul{
     list-style: none;
     text-align: center;
     padding: 0;
 }
-.portfolio .filter-buttons ul li{
+.portfolio .filter-buttons ul li, .Testimonials .filter-buttons ul li{
 
     font-weight: 500;
     font-size: 16px;
@@ -74,11 +74,11 @@ body{
     padding-bottom: 0px;
     padding: 5px;
 }
-.portfolio .filter-buttons ul li.active{
+.portfolio .filter-buttons ul li.active, .Testimonials .filter-buttons ul li.active{
     color: #febd01;
     border-bottom: 2px solid #febd01;
 }
-.portfolio .portfolio-gallery{
+.portfolio .portfolio-gallery, .Testimonials .portfolio-gallery1{
     flex: 0 0 100%;
     max-width: 100%;
     display: flex;
@@ -88,8 +88,7 @@ body{
     flex: 0 0 45%;
     max-width: 45%;
     height: 335px;
-    position: relative;
-    padding-right: 20px;   
+    position: relative;   
 }
 .portfolio .portfolio-gallery .item .inner{
     position: relative;
@@ -99,9 +98,37 @@ body{
     width: 100%;
     height: 100%;
     display: block;
-
+    transition: 1s;
+    opacity: 0.7;
 }
-  
+
+.portfolio .portfolio-gallery .item img:hover{
+    opacity: 1;
+}
+ 
+.texts{
+    display: flex;
+  justify-content: space-evenly;
+  font-family: 'Poppins', sans-serif;
+  font-size: x-large;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media(max-width:1200px){
+    .texts{
+        display: flex;
+      justify-content: space-evenly;
+      font-family: 'Poppins', sans-serif;
+      font-size: large;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .Testimonials .portfolio-gallery1{
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+}
 @media(max-width:767px){
   
     .portfolio .portfolio-gallery .item{
@@ -110,11 +137,35 @@ body{
         position: relative;
         padding:8px ;
     }
+    .texts{
+        display: flex;
+      justify-content: space-evenly;
+      font-family: 'Poppins', sans-serif;
+      font-size: large;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .Testimonials .portfolio-gallery1{
+        max-height: 50vh;
+    }
   
 }
 @media(max-width:500px){
   
     .portfolio .portfolio-gallery .item{
         flex:0 0 100% ;
-        max-width: 100%; }
+        max-width: 100%; 
+    }
+    .texts{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Poppins', sans-serif;
+        font-size: large;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
+
+
+/*REMOVE IF UNNECESSARY*/
+
