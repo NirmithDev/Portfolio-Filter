@@ -15,5 +15,11 @@
 - margin : 0 auto is the OG centering line ever lol JK JK 😆
 - I learnt and advanced my knowledge in DOM Manipulation
 
+#### Updates
+- I added a testimonial section to it since it is pretty cool and I wanted to use what I learnt to build it
+
+#### What else can be used for this???
+- Use JSON maybe and create one and test it out should do the same thing but not soooo sure
+
 What it looks like:
 ![final look](https://github.com/NirmithVictor/Portfolio-Filter/blob/main/project_images/finalLook.png)
