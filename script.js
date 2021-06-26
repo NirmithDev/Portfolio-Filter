@@ -10,7 +10,7 @@ for (let i = 0; i < filterButtons.length; i++) {
         }
         this.classList.add("active");
         const target = this.getAttribute("data-target")
-   
+        
         for (let k = 0; k < items.length; k++) {
             items[k].style.display = "none";
             if (target == items[k].getAttribute("data-id")) {
