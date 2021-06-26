@@ -17,11 +17,24 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-  
+
+.cont1{
+    margin: 13px;
+}
+.cont:hover{
+    background-color: #febd01;
+    color: white;
+    font-weight: bolder;
+}
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
+}
+.contact .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 .section-title h1{
     display: inline-block;
@@ -47,10 +60,10 @@ body{
 .text-right{
     text-align: right!important;
 }
-.portfolio, .Testimonials{
+.portfolio, .Testimonials, .contact{
     padding: 30px 7px;
 }
-.portfolio .section-title h1:before,.Testimonials .section-title h1:before{
+.portfolio .section-title h1:before,.Testimonials .section-title h1:before, .contact .section-title h1:before {
     left: 30%;
 }
 .portfolio .filter-buttons, .Testimonials .filter-buttons{
@@ -166,6 +179,12 @@ body{
     }
 }
 
+footer {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    max-height: 100px;
+}
 
-/*REMOVE IF UNNECESSARY*/
 
